@@ -1,6 +1,7 @@
 "use client";
 
 import BlogPost from "@/components/BlogPost";
+import NewsLetters from "@/components/NewsLetters";
 import axios from "axios";
 import Image from "next/image";
 import { use, useEffect, useState } from "react";
@@ -37,7 +38,7 @@ export default function Home() {
     <div className="">
       <section className="grid md:grid-cols-3 grid-cols-1 gap-4 p-4  py-10">
         {data.map((post, key) => (
-          <div className="">
+          <div className="" key={key}>
             <BlogPost
               title={post.title}
               description={post.description}
@@ -48,6 +49,18 @@ export default function Home() {
           </div>
         ))}
       </section>
+
+      {/* news letter */}
+
+      <section>
+        <NewsLetters/>
+      </section>
+
+
+
+
+
+
     </div>
   );
 }

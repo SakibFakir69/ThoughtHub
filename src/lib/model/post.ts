@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+/// photo profil
 const postSchema = new mongoose.Schema({
   title: String,
   description: String,
@@ -13,6 +13,6 @@ const Post =mongoose.models.Post ||  mongoose.model("Post", postSchema);
 // capital world
 export default Post;
 
-
+//// do creat post , news letter
 
 

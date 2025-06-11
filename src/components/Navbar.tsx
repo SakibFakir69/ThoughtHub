@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <div className="flex justify-between p-4  fixed z-50 bg-black backdrop-blur-3xl w-full top-0 left-0">
-      <section className="flex space-x-4">
+      <section className="flex space-x-4 text-white">
         {/* navbar */}
         <h2 className="font-medium">AIInsight</h2>
 
