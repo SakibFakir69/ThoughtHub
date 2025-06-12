@@ -47,7 +47,7 @@ function Navbar() {
       <section>
         {/* profile */}
         <div className="flex gap-x-4 items-center justify-center ">
-          <button className="btn btn-primary">Create Post</button>
+          <Link href={'/create-post'} className="btn btn-primary">Create Post</Link>
           <h2 className="h-10 w-10 rounded-full border-stone-200"></h2>
         </div>
       </section>

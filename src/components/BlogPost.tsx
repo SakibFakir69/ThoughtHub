@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface postProps {
   title: string;
@@ -6,6 +6,7 @@ interface postProps {
   tags: string[];
   likes: number;
   views: number;
+
 }
 
 export default function BlogPost({
@@ -14,13 +15,18 @@ export default function BlogPost({
   tags,
   likes,
   views,
+
 }: postProps) {
+
+
   return (
     <div className=" ">
-      <div className="border flex flex-col gap-y-5 p-2 rounded shadow border-black/10">
-        <div>
-          
 
+
+      
+
+      <div className="border flex flex-col gap-y-5 p-2 rounded shadow border-black/10" >
+        <div>
           {title.length > 40 ? (
             <div>
               <h2 className="font-semibold text-xl w-full ">
@@ -33,13 +39,12 @@ export default function BlogPost({
             </div>
           )}
 
-
           {description.length > 160 ? (
-            <div className="h-24 border mt-3">
+            <div className="h-24 mt-3">
               <p>{description.slice(0, 150)} ...</p>
             </div>
           ) : (
-            <div className="h-24 border mt-3">
+            <div className="h-24 mt-3">
               <p>{description}</p>
             </div>
           )}
