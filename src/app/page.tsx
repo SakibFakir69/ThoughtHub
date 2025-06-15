@@ -41,9 +41,9 @@ export default function Home() {
     <div className="">
       <section className="grid md:grid-cols-3 grid-cols-1 gap-4 p-4  py-10">
         {data?.map((post, key) => (
-          <div  >
+          <div   key={key}>
             <BlogPost
-            key={key}
+            
               title={post.title}
               description={post.description}
               likes={post.likes}
